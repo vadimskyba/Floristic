@@ -1,0 +1,40 @@
+@charset "utf-8";
+/*
+(c) 2011 Vadim Skyba | sineloco@mail.ru
+*/
+
+/*}
+HTML
+{*/
+
+div {
+	zoom: 1;	/* Fixing IE bugs*/
+}
+
+
+ul, ul li, p {
+	zoom: 0;
+}
+
+/*
+form, ol, dl, dt, dd, h1, h2, h3, h4, h5, h6, blockquote {
+	zoom: 1;
+}
+*/
+
+sup,sub {
+	font-size: 90%;
+}
+
+pre,code {
+	font-size: 95%;
+}
+
+pre code, code pre {
+	font-size: 100%;
+}
+
+img {
+  /* IE 7+ For nice stretching images (Doesn't use bicubic by default...) */
+  -ms-interpolation-mode: bicubic;
+}

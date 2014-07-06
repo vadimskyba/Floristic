@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*
+(c) 2011 Vadim Skyba | sineloco@mail.ru
+*/
+
+/*}
+HTML
+{*/
+
+a:link *, a:visited * {
+	cursor: hand;
+}
+/*}
+Layout
+{*/
+
+#layout {
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+
+#footer {
+	top: expression((document.body.offsetHeight - this.offsetHeight) + "px");	/*	Fox footer vertical position for IE6 */
+}
+
+#logo, #lang_select, #login, #phones, #left, #content_container, #copyright, #sitemap_f, #contacts, #phones_1, #logo_home, #navigation_home, #home_works, #home_news {
+	display: inline;	/* IE6 @float double @margin @padding fix */
+}
